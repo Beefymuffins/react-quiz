@@ -29,10 +29,3 @@ const Options = ({ question, dispatch, answer }) => {
 };
 
 export default Options;
-
-// Nested ternary: BUT THESE SUCK LOL
-// hasAnswer
-//   ? index === question.correctOption
-//     ? 'correct'
-//     : 'wrong'
-//   : ''
