@@ -1,9 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
-import { useQuiz } from '../contexts/QuizContext';
 
-const Options = ({ question }) => {
-  const { dispatch, answer } = useQuiz();
+const Options = ({ question, dispatch, answer }) => {
   const hasAnswer = answer !== null;
 
   return (

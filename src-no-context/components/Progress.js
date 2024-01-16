@@ -1,9 +1,12 @@
 import React from 'react';
-import { useQuiz } from '../contexts/QuizContext';
 
-const Progress = () => {
-  const { index, numQuestions, points, maxPossiblePoints, answer } = useQuiz();
-
+const Progress = ({
+  index,
+  numQuestions,
+  points,
+  maxPossiblePoints,
+  answer,
+}) => {
   return (
     <header className="progress">
       {/* Number(answer !== null) will convert the answer to a boolean with true = 1 false = 0 */}
